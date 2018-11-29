@@ -1,0 +1,19 @@
+<div class="list-group-div-categorie col-md-2">
+    <ul class="list-group">
+        {% for categorie in site.categories %}
+        <li class="list-group-item">
+            {{ categorie | first }}
+            <span class="badge">
+            </span>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+<div class="list-group-div-post col-md-3">
+    <ul class="list-group">
+    {% for page in site.posts %}
+        <li class="list-group-item"><a href="{{ page.url }}">{{ page.title }}</a></li>
+    {% endfor %}
+    </ul>
+</div>
+<div class="col-md-7">{{ content }}</div>
