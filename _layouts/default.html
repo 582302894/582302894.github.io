@@ -1,10 +1,15 @@
-<div class="head">
-	{% include head.html %}
-</div>
-<div class="container">
-	<div class="list">
-		{% include list.html %}
-	</div>	
-</div>
-{% include foot.html %}
-
+<!DOCTYPE html>
+<html>
+    <head>
+        {% include head.html %}
+    </head>
+    <body>
+        <div class="slider">
+            {% include list.html %}
+        </div>
+        <div class="main">
+            {{ content }}
+        </div>
+        {% include foot.html %}
+    </body>
+</html>

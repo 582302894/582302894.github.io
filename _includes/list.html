@@ -1,19 +1,25 @@
-<div class="list-group-div-categorie col-md-2">
-    <ul class="list-group">
-        {% for categorie in site.categories %}
-        <li class="list-group-item">
+<div class="list-silder-div-categorie">
+    <ul class="list-silder">
+        {% for categorie in site.categories limit:1 %}
+        <li class="list-silder-item list-silder-item-left list-silder-item-hover" data-categorie="{{ categorie | first }}">
             {{ categorie | first }}
-            <span class="badge">
-            </span>
+            <!-- <span class="badge">
+            </span> -->
+        </li>
+        {% endfor %}
+        {% for categorie in site.categories offset:1 %}
+        <li class="list-silder-item list-silder-item-left" data-categorie="{{ categorie | first }}">
+            {{ categorie | first }}
+            <!-- <span class="badge">
+            </span> -->
         </li>
         {% endfor %}
     </ul>
 </div>
-<div class="list-group-div-post col-md-3">
-    <ul class="list-group">
+<div class="list-silder-div-post">
+    <ul class="list-silder">
     {% for page in site.posts %}
-        <li class="list-group-item"><a href="{{ page.url }}">{{ page.title }}</a></li>
+        <li class="list-silder-item list-silder-item-right list-silder-item-{{ page.categories }} hide" data-categorie="{{ page.categories }}"><a href="{{ page.url }}">{{ page.title }}</a></li>
     {% endfor %}
     </ul>
 </div>
-<div class="col-md-7">{{ content }}</div>
