@@ -1,4 +1,10 @@
 <div class="list-silder-div-categorie">
+    <img id="head-avatar" src="/img/18064826.jpg" />
+    <ul id="list-information">
+        <li>
+            <a href="https://github.com/582302894" target="_blank"><img class="github" src="/img/640caed1f970d4d9213d6457dbc2f5ef.png"></a>
+        </li>
+    </ul>
     <ul class="list-silder">
         {% for categorie in site.categories limit:1 %}
         <li class="list-silder-item list-silder-item-left list-silder-item-hover" data-categorie="{{ categorie | first }}">
