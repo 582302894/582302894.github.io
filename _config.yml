@@ -45,3 +45,4 @@ plugins:
 
 Regeneration: w
 filter: 'category'
+highlighter: rouge

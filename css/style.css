@@ -97,3 +97,13 @@ body{
 #list-information .github{
 	width: 42px;
 }
+
+.main{
+	font: 400 16px/1 "Open Sans","Hiragino Sans GB",sans-serif;
+	color: #283444;
+	font-size: 18px;
+    line-height: 1.6;
+}
+.main h1,.main h2,.main h3,.main h4{
+	font-weight: bold;
+}
