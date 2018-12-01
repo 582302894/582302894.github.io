@@ -44,6 +44,9 @@ body {
     margin: auto;
     width: 80%;
 }
+.main .content img{
+    max-width: 100%;
+}
 .container {
     padding: 0;
     margin: 0;
@@ -62,6 +65,7 @@ body {
 .list-silder-div-post {
     width: 200px;
     float: left;
+    padding-top: 6px;
 }
 .list-silder-div-categorie li, .list-silder-div-post li {
     border-right: 0px;
@@ -99,8 +103,9 @@ body {
     outline: none;
 }
 .list-silder-item-right img{
-    width: 32px;
+    width: 20px;
     float: left;
+    margin: 5px -2px 7px 2px;
 }
 .list-silder-item-hover {
     color: black;
@@ -145,6 +150,10 @@ body {
 .main h1, .main h2, .main h3, .main h4 {
     font-weight: bold;
 }
+
 .icon-right {
     width: 24px;
+}
+.dt-published{
+    color: #969797;
 }
